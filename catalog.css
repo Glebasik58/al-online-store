@@ -1,0 +1,79 @@
+h1 {
+ font-size: 50px;
+ margin-bottom: 20px;
+ text-align: center;
+}
+
+.breadcrumb {
+ font-size: 14px;
+ color: gray;
+ margin-bottom: 10px;
+ text-align: center;
+ margin-top: 50px;
+}
+
+.breadcrumb a {
+ text-decoration: none;
+ color: gray;
+}
+
+.catalog {
+ display: flex;
+ flex-wrap: wrap; 
+ justify-content: center; 
+ gap: 20px; 
+ max-width: 1200px; 
+ margin: 0 auto; 
+}
+
+.catalog-item {
+ width: 30%; 
+ position: relative;
+ box-sizing: border-box;
+}
+
+.catalog-item img {
+ width: 100%;
+ height: auto;
+ border-radius: 10px;
+}
+
+.overlay {
+ position: absolute;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ background: rgba(0, 0, 0, 0.5); 
+ opacity: 0;
+ transition: opacity 0.3s;
+ border-radius: 10px;
+}
+
+.catalog-item:hover .overlay {
+ opacity: 1; 
+}
+
+.title {
+ position: absolute;
+ bottom: 10px;
+ left: 10px;
+ color: white;
+ font-size: 1.2em;
+ font-weight: bold;
+}
+
+.arrow {
+ position: absolute;
+ bottom: 10px;
+ right: 10px;
+ color: white;
+ font-size: 1.5em;
+ text-decoration: none;
+ opacity: 0.7;
+ transition: opacity 0.3s;
+}
+
+.arrow:hover {
+ opacity: 1; 
+}
